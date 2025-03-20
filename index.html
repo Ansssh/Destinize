@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinize</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/ea13da9c58.js" crossorigin="anonymous"></script> -->
 </head>
+
 <body>
-    
+    <header>
+        <div id="logo-full">
+            <img src="assets/logos/icon-512.png" alt="icon-512" id="logo-img">
+            <h1 id="logo-name">Destinize</h1>
+        </div>
+        <label for="search-bar" id="search-panel">
+            <img src="assets/logos/search-normal.png" alt="mag-glass" id="mag-glass">
+            <input type="text" name="search-bar" id="search-bar" placeholder="Cari apapun disini...">
+        </label>
+
+        <div class="language">
+            <img src="assets/logos/lang.png" alt="language" id="lang-img">
+            <select name="lang" id="lang">
+                <option value="bahasa">Bahasa Indonesia</option>
+            </select>
+            <div class="triangle"></div>
+        </div>
+
+        <div class="location">
+            <img src="assets/logos/gps.png" alt="gps" id="location-img">
+            <div id="location-name-select">
+                <div id="location-name">Lokasi</div>
+                <div id="location-group">
+                    <select name="location" id="location-select">
+                        <option value="IndonesiaYogyakarta">Indonesia, Yogyakarta</option>
+                    </select>
+                    <div class="triangle2"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr id="header-finish">
+
+    <!-- Navigation Bar -->
+    <div id="nav-container">
+        <nav id="nav-bar">
+            <a href="#" class="link">
+                Gunung
+                <div class="arrowhead"></div>
+            </a>
+            <a href="#" class="link">
+                Pantai
+                <div class="arrowhead"></div>
+            </a>
+            <a href="#" class="link">
+                Kuliner
+                <div class="arrowhead"></div>
+            </a>
+            <a href="#" class="link">
+                Outbond
+                <div class="arrowhead"></div>
+            </a>
+            <a href="#" class="link">
+                Sejarah
+                <div class="arrowhead"></div>
+            </a>
+            <a href="#" class="link">
+                Edukasi
+                <div class="arrowhead"></div>
+            </a>
+            <a href="#" class="link">
+                Romantis
+                <div class="arrowhead"></div>
+            </a>
+            <a href="#" class="link">
+                Alam
+                <div class="arrowhead"></div>
+            </a>
+        </nav>
+        <div id="navigation-buttons">
+            <img src="assets/logos/user.png" alt="user" id="user">
+            <img src="assets/logos/cart.png" alt="cart" id="cart">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
