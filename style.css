@@ -48,7 +48,7 @@ header {
 }
 
 #logo-name {
-    font-size: var(--fs-base);
+    font-size: var(--fs-md);
     font-family: 'jk';
     font-weight: 800;
 }
@@ -202,11 +202,35 @@ header {
     opacity: 0.5;
 }
 
+/* Hamburger Menu */
+
+#hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5px;
+    align-items: center;
+    display: none;
+}
+
+.l1, .l2, .l3{
+    width: 30px;
+    height: 2px;
+    background-color: rgb(154, 158, 166);
+}
+
+@media only screen and (max-width: 550px) {
+    #hamburger{
+        display: flex;
+    }
+    .language, .location, #search-panel{
+        display: none;
+    }
+}
 
 
 /* navigation Bar */
 
-#nav-container{
+#nav-container {
     display: flex;
     justify-content: space-between;
     margin-left: 7vw;
@@ -215,16 +239,16 @@ header {
     align-items: center;
 }
 
-#nav-bar{
+#nav-bar {
     display: flex;
     gap: 3vw;
     flex-wrap: wrap;
 }
 
 
-.link{
+.link {
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 5px;
     text-decoration: none;
     color: #969BAB;
@@ -232,7 +256,7 @@ header {
 
     @media only screen and (max-width: 420px) {
         align-items: flex-start;
-        
+
     }
 }
 
@@ -245,11 +269,169 @@ header {
 }
 
 
-#navigation-buttons{
+#navigation-buttons {
     display: flex;
     gap: 5px;
 }
 
-#user, #cart{
-    width:  var(--fs-xl);
+#user,
+#cart {
+    width: var(--fs-xl);
+}
+
+
+/* hero section */
+
+.hero-section {
+    display: flex;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    align-items: start;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 750px) {
+        flex-direction: column;
+
+    }
+}
+
+.hero__explore {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    margin-top: 1rem;
+}
+
+#hero__heading {
+    font-weight: 800;
+    font-size: var(--fs-xl);
+
+    @media only screen and (max-width: 750px) {
+        br {
+            display: none;
+        }
+    }
+}
+
+#hero_wonders {
+    background-color: rgba(7, 137, 223, 0.1);
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 50px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+#hero__emoji {
+    font-size: var(--fs-sm);
+}
+
+#hero__tag {
+    font-size: calc(var(--fs-sm)* 0.9);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #4737FF;
+}
+
+#hero__dot {
+    font-size: var(--fs-md);
+    color: #4737FF;
+
+}
+
+#hero_description {
+    line-height: 1.5;
+    font-size: calc(var(--fs-sm) * 0.8);
+    color: #969BAB;
+
+    @media only screen and (max-width: 750px) {
+        br {
+            display: none;
+        }
+
+        font-size: calc(var(--fs-base));
+
+
+    }
+}
+
+#hero__img {
+    width: calc(var(--fs-xxxl) + 20rem);
+    @media only screen and (max-width: 700px) {
+    width: calc(var(--fs-xxxl) + 15rem);
+        
+    }
+    justify-self: center;
+}
+
+
+#hero__summer {
+    color: #4737FF;
+}
+
+
+.hero_buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media only screen and (max-width: 750px) {
+        width: 70%;
+        justify-content: space-between;
+        
+    }
+}
+
+#hero__button {
+    background-color: #4475F2;
+    padding: calc(var(--fs-sm));
+    border: transparent;
+    color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 20px 35px 0px rgba(68, 117, 242, 0.4);
+    -moz-box-shadow: 0px 20px 35px 0px rgba(68, 117, 242, 0.4);
+    box-shadow: 0px 5px 35px 0px rgba(68, 117, 242, 0.4);
+    font-size: calc(var(--fs-base) * 0.8);
+
+}
+
+#hero__play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+#hero_play {
+    width: 2em;
+    border: 2px solid #4475F2;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+}
+
+#hero_triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 4px 0 4px 6.9px;
+    border-color: transparent transparent transparent #4475F2;
+    transform: rotate(0deg);
+    -webkit-box-shadow: 0px 3px 35px 0px rgba(68, 117, 242, 0.4);
+    -moz-box-shadow: 0px 3px 35px 0px rgba(68, 117, 242, 0.4);
+    box-shadow: 0px 3px 35px 0px rgba(68, 117, 242, 0.4);
+    margin-left: 1px;
+}
+
+#hero_play-label {
+    color: #969BAB;
+    font-weight: 700;
+    font-size: var(--fs-sm);
 }
