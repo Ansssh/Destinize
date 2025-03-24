@@ -532,7 +532,9 @@ header {
 }
 
 #destination-title{
-    font-size: var(--fs-base);
+    font-size: var(--fs-sm);
+    color: #4475F2;
+    font-weight: 700;
 }
 
 #destination-data{
@@ -624,5 +626,64 @@ header {
     font-size: calc(var(--fs-sm) * 0.7);
 }
 
+/* reservation panel */
+
+#reservation-fav{
+    display: flex;
+    align-items: center;
+    margin: 0 7vw;
+    justify-content: space-between;
+}
+
+#reservation-img{
+    width: calc(var(--fs-xxxl) * 8);
+}
+
+@media only screen and (max-width:850px) {
+    #reservation-fav{
+        flex-direction: column;
+    }
+    #reservation-img{
+    width: calc(var(--fs-xxxl) * 10);
+    }
+}
+
+#reservation-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#reservation-tag{
+    color: #4475F2;
+    font-weight: 700;
+}
+
+#reservation-heading{
+    font-size: var(--fs-xl);
+}
+
+#reservation-mag-box, #reservation-pencil-box, #reservation-love-box{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#reservation-pencil, #reservation-love, #reservation-mag{
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #efe0b4;
+    aspect-ratio: 1;
+}
+
+#reservation-pencil-heading, #reservation-love-heading, #reservation-mag-heading{
+    font-size: var(--fs-base);
+    font-weight: 500;
+}
+
+#reservation-mag-description, #reservation-love-description,#reservation-pencil-description{
+    font-size: var(--fs-sm);
+}
 
 
