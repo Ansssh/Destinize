@@ -515,6 +515,41 @@ header {
     box-shadow: 0 10px 25px rgb(0, 0, 0, 0.2);
 }
 
+#destination-description{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+#destination-heading{
+    display: flex;
+    flex-direction: column;
+    /* gap: var(--fs-md); */
+    margin-bottom: 1rem;
+}
+
+#destination-heading-text{
+    font-size: var(--fs-md);
+}
+
+#destination-title{
+    font-size: var(--fs-base);
+}
+
+#destination-data{
+    display: flex;
+    position: relative;
+}
+
+#air__emoji{
+    font-size: var(--fs-base);
+}
+#destination-more{
+    position: absolute;
+    right: 0;
+    align-self: center;
+    text-decoration: none;
+    font-size: var(--fs-sm);
+}
 
 #destination-fav {
     display: flex;
@@ -528,10 +563,14 @@ header {
 
 #destination-imgs {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: var(--fs-base);
+}
 
+@media only screen and (max-width: 750px) {
+    #destination-imgs{
+        justify-content: space-evenly;
+    }
 }
 
 #destination-img__cont1,
@@ -543,7 +582,6 @@ header {
     flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
-    object-fit: cover;
     box-shadow: 0 10px 25px rgb(0, 0, 0, 0.4);
 }
 
@@ -552,16 +590,11 @@ header {
 #destination-img-3,
 #destination-img-4 {
     width: calc(var(--fs-xxxl) * 3);
-    object-fit: cover;
+    height: 100%;
+    object-fit:cover;
 }
 
-#destination_wrapper,
-#destination_wrapper2 {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
 
-}
 
 
 @media only screen and (max-width: 750px) {
@@ -590,3 +623,6 @@ header {
 #destination-city{
     font-size: calc(var(--fs-sm) * 0.7);
 }
+
+
+
