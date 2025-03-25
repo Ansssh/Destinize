@@ -515,37 +515,39 @@ header {
     box-shadow: 0 10px 25px rgb(0, 0, 0, 0.2);
 }
 
-#destination-description{
+#destination-description {
     display: flex;
     gap: 5px;
     align-items: center;
 }
-#destination-heading{
+
+#destination-heading {
     display: flex;
     flex-direction: column;
     /* gap: var(--fs-md); */
     margin-bottom: 1rem;
 }
 
-#destination-heading-text{
+#destination-heading-text {
     font-size: var(--fs-md);
 }
 
-#destination-title{
+#destination-title {
     font-size: var(--fs-sm);
     color: #4475F2;
     font-weight: 700;
 }
 
-#destination-data{
+#destination-data {
     display: flex;
     position: relative;
 }
 
-#air__emoji{
+#air__emoji {
     font-size: var(--fs-base);
 }
-#destination-more{
+
+#destination-more {
     position: absolute;
     right: 0;
     align-self: center;
@@ -570,7 +572,7 @@ header {
 }
 
 @media only screen and (max-width: 750px) {
-    #destination-imgs{
+    #destination-imgs {
         justify-content: space-evenly;
     }
 }
@@ -593,7 +595,7 @@ header {
 #destination-img-4 {
     width: calc(var(--fs-xxxl) * 3);
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 
@@ -605,7 +607,7 @@ header {
     }
 }
 
-#destination-info{
+#destination-info {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -618,72 +620,149 @@ header {
     text-align: center;
 }
 
-#destination-name{
+#destination-name {
     font-size: calc(var(--fs-sm) * 0.9);
 }
 
-#destination-city{
+#destination-city {
     font-size: calc(var(--fs-sm) * 0.7);
 }
 
 /* reservation panel */
 
-#reservation-fav{
+#reservation-fav {
     display: flex;
     align-items: center;
     margin: 0 7vw;
     justify-content: space-between;
 }
 
-#reservation-img{
+#reservation-img {
     width: calc(var(--fs-xxxl) * 8);
 }
 
 @media only screen and (max-width:850px) {
-    #reservation-fav{
+    #reservation-fav {
         flex-direction: column;
     }
-    #reservation-img{
-    width: calc(var(--fs-xxxl) * 10);
+
+    #reservation-img {
+        width: calc(var(--fs-xxxl) * 10);
     }
 }
 
-#reservation-description{
+#reservation-description {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-#reservation-tag{
+#reservation-tag {
     color: #4475F2;
     font-weight: 700;
 }
 
-#reservation-heading{
+#reservation-heading {
     font-size: var(--fs-xl);
 }
 
-#reservation-mag-box, #reservation-pencil-box, #reservation-love-box{
+#reservation-mag-box,
+#reservation-pencil-box,
+#reservation-love-box {
     display: flex;
     gap: 1rem;
     align-items: center;
     margin-top: 1rem;
 }
 
-#reservation-pencil, #reservation-love, #reservation-mag{
+#reservation-pencil,
+#reservation-love,
+#reservation-mag {
     padding: 0.5rem;
     border-radius: 10px;
     background-color: #efe0b4;
     aspect-ratio: 1;
 }
 
-#reservation-pencil-heading, #reservation-love-heading, #reservation-mag-heading{
+#reservation-pencil-heading,
+#reservation-love-heading,
+#reservation-mag-heading {
     font-size: var(--fs-base);
     font-weight: 500;
 }
 
-#reservation-mag-description, #reservation-love-description,#reservation-pencil-description{
+#reservation-mag-description,
+#reservation-love-description,
+#reservation-pencil-description {
     font-size: var(--fs-sm);
 }
 
+#map-wisata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 7vw 7vh 7vw;
+}
 
+#map-tag{
+    color: #4475F2;
+    font-weight: 700;
+    font-size: var(--fs-sm);
+}
+
+#map-heading{
+    font-weight: 1000;
+    font-size: var(--fs-xl);
+}
+
+#map-content{
+    display: flex;
+    text-align: center;
+    line-height: 2;
+    font-weight: 400;
+    font-stretch: condensed;
+}
+
+#map {
+    width: calc(100vw - 14vw);
+    height: 400px;
+    border: 0;
+}
+
+#map-features{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+
+#feature1, #feature2, #feature3{
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+}
+
+#feature1-desc, #feature2-desc, #feature3-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 20vw;
+}
+
+#feature1-img, #feature2-img, #feature3-img{
+    padding: 7px;
+    margin-top: 5px;
+    align-self: self-start;
+    background-color: #eef1f5;
+    border-radius: 50%;
+}
+
+#feature1-heading, #feature2-heading, #feature3-heading{
+    font-size: var(--fs-base);
+    font-weight: 700;
+}
+
+#feature1-content, #feature2-content, #feature3-content{
+    font-size: var(--fs-sm);
+}
